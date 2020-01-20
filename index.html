@@ -15,35 +15,54 @@
 </head>
 <body>
     
-    <header class="header">
+    <header class="cabecalhoPrincipal">
         <div class="container">
-            <h1 class="cabecalho-titulo">
-                <a href="/index.html">GoChangers</a>
+            <h1 class="cabecalhoPrincipal-titulo">
+                <a href="/index.html">logo</a>
             </h1>
         </div>
     </header>
-    <section>
-        <div class="container-fluid">
+    <main class="conteudoPrincipal">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="teste-align">
-                        dsadsadsa
+                <div class="col-md-8">
+                    <div class="conteudoPrincipal-bloco">
+                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                        
                     </div>                    
                 </div>
-                <div class="col-md-6">
-                    <div class="teste-align">
-                        dsadsadsa
+                <div class="col-md-4">
+                    <div class="conteudoPrincipal-formulario">
+                        <form method="POST" action="https://smtl.gama.academy/leads/3d935292-39f4-11ea-a319-e90cfbc180ef">
+
+                            <div class="conteudoPrincipal-formulario-input">
+                                <input
+                                name="name"
+                                type="text"
+                                pattern="^\D{2,}\s[\D\s]{2,}$"
+                                title="Digite seu nome completo"
+                                required
+                                />
+                            </div>
+                            <div class="conteudoPrincipal-formulario-input">
+                                <input
+                                name="email"
+                                type="email"
+                                title="Digite um email válido"
+                                required
+                                />
+                            </div>
+                            <input name="redirectTo" type="hidden" value="https://gama.academy" />
+                            <input name="debugMode" type="hidden" value="true" />
+                            <input type="submit" />
+                          </form>
                     </div>                    
                 </div>
                 
             </div>
         </div>
 
-    </section>
- 
-  
-    
-
+    </main>
    
        
 </body>
