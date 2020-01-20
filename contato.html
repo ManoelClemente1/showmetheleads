@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contato</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    
+</head>
+<body>
+    <header class="cabecalhoPrincipal">
+        <div class="container">
+            <h1 class="cabecalhoPrincipal-titulo">
+                <a href="index.html">logo</a>
+            </h1>
+        </div>
+    </header>
+    <main class="conteudoPrincipal">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="conteudoPrincipal-bloco">
+                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                        
+                    </div>                    
+                </div>
+                <div class="col-md-4">
+                    <div class="conteudoPrincipal-formulario">
+                        <form method="POST" action="https://smtl.gama.academy/leads/3d935292-39f4-11ea-a319-e90cfbc180ef">
+                            <div class="conteudoPrincipal-formulario-input">
+                                <input
+                                name="name"
+                                type="text"
+                                pattern="^\D{2,}\s[\D\s]{2,}$"
+                                title="Digite seu nome completo"
+                                required
+                                />
+                            </div>
+                            <div class="conteudoPrincipal-formulario-input">
+                                <input
+                                name="email"
+                                type="email"
+                                title="Digite um email válido"
+                                required
+                                />
+                            </div>
+                            <input name="redirectTo" type="hidden" value="https://gama.academy" />
+                            <input name="debugMode" type="hidden" value="true" />
+                            <input type="submit" />
+                          </form>
+                    </div>                    
+                </div>    
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>  
+</body>
+</html>
