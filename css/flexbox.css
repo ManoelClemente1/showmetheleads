@@ -1,0 +1,21 @@
+.cabecalhoPrincipal .cabecalhoPrincipal-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudoPrincipal .conteudoPrincipal-bloco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudoPrincipal .conteudoPrincipal-formulario{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudoPrincipal-formulario{
+    display: flex;
+}
