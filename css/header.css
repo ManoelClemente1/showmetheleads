@@ -11,7 +11,7 @@
 }
 
 .menu-base{
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 77px;
     left: 0px;
