@@ -1,5 +1,9 @@
 /* Menu */
 
+.logo-vc-tech{
+    margin-top: 15px;
+}
+
 .container-header{
     position: relative;
     display: flex;

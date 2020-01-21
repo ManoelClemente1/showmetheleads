@@ -9,10 +9,14 @@
     <meta name="author" content="vctech">
     <title>Posts</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/flexbox.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/post.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -23,6 +27,37 @@
     <!-- End Google Tag Manager -->
 </head>
 <body>
+   <header class="menu-base container-header">
+        <div class="logo-buscador-div">
+            <img class="logo-vc-tech" src="img/vc_tech.jpg" alt="Logo da vctech">
+        </div>
+        <div class="menu-hamburguer">
+            <input type="checkbox" id="check">
+            <label class="icone" id="icone" for="check"><img src="img/icone_menu_hamburguer.png"></label>
+            <div class="barra">
+                <nav class="nav-links">
+                    <a class="" href="">
+                        <div class="link">Home</div>
+                    </a>
+                    <a href="">
+                        <div class="link">Categorias</div>
+                    </a>
+                    <a href="">
+                        <div class="link">Sobre</div>
+                    </a>
+                    <a href="">
+                        <div class="link">Contato</div>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <div class="menu-desktop">
+        </div>
+         <div class="input-buscador">
+             <img>
+         </div>
+    </header>
+    
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8RXR66"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -40,15 +75,22 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="conteudoPrincipal-bloco">
-                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                        
                     </div>                    
                 </div>                
             </div>
         </div>
     </main>
     <footer>
-        
+        <footer class="footer-base container-footer">
+        <div class="social-medias">
+            <a class="facebook-icon" href="#"><img src="img/facebook_image.jpg" alt="Icone do Facebook"></a>
+            <a class="instagram-icon" href="#"><img src="img/instagram_image.jpg" alt="Icone do Facebook"></a>
+            <a class="twitter-icon" href="#"><img src="img/twitter_image.jpg" alt="Icone do Facebook"></a>
+        </div>
+        <div class="copyright-div">
+            <p class="copyright">&copy; 2020 vctech.com<p>
+        </div>
+    </footer> 
     </footer>  
 </body>
 </html>
