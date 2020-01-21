@@ -1,0 +1,80 @@
+/* Menu */
+
+.container-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-base{
+    position: absolute;
+    width: 100vw;
+    height: 77px;
+    left: 0px;
+    top: 0px;
+    background: #3F82C4;
+    z-index: 10;
+}
+
+
+/* Menu Hamburguer */
+
+.menu-hamburguer{
+    position: fixed;
+    left: -150px;
+    top: 0;
+}
+
+#check{
+    display: none;
+}
+
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    top: 10px;
+    left: 155px;
+    z-index: 1;
+}
+
+.barra{
+    background: #3F82C4;
+    height: 500px;
+    width: 150px;
+    transition: all .3s linear;
+}
+
+.nav-links{
+    margin-top: 77px;
+}
+
+nav{
+    width: 100%;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.link{
+    padding: 20px;
+    font-family: "Arial";
+    font-size: 16px;
+    transition: all .3s linear;
+    color: white;
+    
+}
+
+.first-link{
+    padding-top 150px;
+}
+
+#check:checked ~ .barra{
+    transform: translateX(150px);
+};
+
+#check:checked ~ .barra nav a .link{
+    opacity: 0;
+    display: none;
+};

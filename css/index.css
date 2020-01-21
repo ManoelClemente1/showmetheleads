@@ -1,0 +1,30 @@
+/* Index */
+
+/* Logo vctech */
+
+.logo-vc-tech{
+    margin-top: 15px;
+}
+
+
+/* Conteudo principal */
+
+.conteudo-principal-bloco{
+    margin-top: 110px;
+    font-family: "Roboto";
+    color: #3F82C4;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+figure{
+    margin: 6em;
+}
+
+figure img{
+    border: 1.2px solid lightgrey;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
