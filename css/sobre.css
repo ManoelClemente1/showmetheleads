@@ -1,0 +1,53 @@
+/* Sobre */
+
+/* Conteudo principal */
+
+.conteudo-principal-bloco{
+    margin-top: 110px;
+    font-family: "Roboto";
+    color: #3F82C4;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+h1{
+    text-align: center;
+    font-size: 25px;
+}
+
+figure{
+    margin: 2em;
+    text-align: center;
+}
+
+figure img{
+    border: 1.2px solid lightgrey;
+    border-radius: 10px;
+}
+
+figcaption{
+    font-size: 8px;
+    color: black;
+}
+
+p{
+    text-align: justify;
+    margin: .5em;
+    color: black;
+}
+
+.assine-ns{
+    text-align: center;
+    color: #3F82C4;
+    margin-top: 1.5em;
+}
+
+input{
+    width: 100%;
+    height: 2.2em;
+    margin-top: .5em;
+    border: 1.2px solid lightgrey;
+    border-radius: 10px;
+}
