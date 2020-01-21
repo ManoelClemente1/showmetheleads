@@ -4,6 +4,47 @@
     margin-top: 15px;
 }
 
+@media(min-aspect-ratio: 800/1000){
+    .logo-vc-tech{
+        margin-top: 10;
+    }
+}
+
+@media (min-aspect-ratio: 800/1000){
+    .logo-buscador-div{
+        width: 90vw;
+        text-align: start;
+    }
+}
+
+@media (min-aspect-ratio:1000/1000){
+    .logo-buscador-div{
+        width: 80vw;
+        text-align: start;
+    }
+}
+
+@media (min-aspect-ratio: 1200/1000){
+    .logo-buscador-div{
+        width: 70vw;
+        text-align: start;
+    }
+}
+
+@media (min-aspect-ratio: 1400/1000){
+    .logo-buscador-div{
+        width: 60vw;
+        text-align: start;
+    }
+}
+
+@media (min-aspect-ratio: 1600/1000){
+    .logo-buscador-div{
+        width: 50vw;
+        text-align: start;
+    }
+}
+
 .container-header{
     position: relative;
     display: flex;
@@ -29,6 +70,12 @@
     top: 0;
 }
 
+@media (min-aspect-ratio: 800/1000){
+    .menu-hamburguer{
+        display: none;
+    }
+}
+
 #check{
     display: none;
 }
@@ -51,7 +98,6 @@
 
 .nav-links{
     margin-top: 77px;
-    text-decoration: none;
 }
 
 .nav-links a{
@@ -103,3 +149,99 @@
 #check:checked ~ .barra{
     transform: translateX(50vw);
 };
+
+
+/* Menu Desktop */
+
+.desk-nav-links a{
+    text-decoration: none;
+    color: black;
+}
+
+.desk-link{
+    width: 100px;
+    padding-top: 50px;
+    font-size: 12px;
+    transition: all .3s linear;
+    font-family: "Roboto";
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+.desk-link-1{
+    right: 380px;
+}
+
+.desk-link-2{
+    right: 320px;
+}
+
+.desk-link-3{
+    right: 230px;
+}
+
+.desk-link-4{
+    right: 170px;
+}
+
+.desk-link-5{
+    right: 120px;
+}
+
+.desk-link-img{
+    position: absolute;
+    width: 35px;
+    margin-top: 10px;
+    top: 0;
+}
+
+.desk-img-1{
+    right: 445px;
+}
+
+.desk-img-2{
+    right: 370px;
+}
+
+.desk-img-3{
+    right: 297px;
+}
+
+.desk-img-4{
+    right: 240px;
+}
+
+.desk-img-5{
+    right: 180px;
+}
+
+@media(min-aspect-ratio: 1000/1000){
+    .desk-link, .desk-link-img{
+        margin-right: 100px;
+    }
+}
+
+@media(min-aspect-ratio: 1200/1000){
+    .desk-link, .desk-link-img{
+        margin-right: 200px
+    }
+}
+
+@media(min-aspect-ratio: 1400/1000){
+    .desk-link, .desk-link-img{
+        margin-right: 300px
+    }
+}
+
+@media(min-aspect-ratio: 1600/1000){
+    .desk-link, .desk-link-img{
+        margin-right: 400px
+    }
+}
+
+@media(max-aspect-ratio: 799/1000){
+    .desk-nav-links{
+        display: none;
+    }
+}

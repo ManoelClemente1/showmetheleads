@@ -51,13 +51,6 @@
     margin: 5px;
 }
 
-.news form input{
-    width: 75%;
-    height: 36px;
-    border: none;
-    border-radius: 2px;
-}
-
 @media (max-aspect-ratio: 500/1000){
     .news form label{
         font-size: 12px
@@ -67,6 +60,31 @@
 @media (max-aspect-ratio: 350/1000){
     .news form label{
         font-size: 10px
+    }
+}
+
+@media (min-aspect-ratio: 650/1000){
+    .news form label{
+         width: 12%;
+    }
+}
+
+.news form input{
+    width: 75%;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+}
+
+@media (min-aspect-ratio: 500/1000){
+    .news form input{
+        width: 55%;
+    }
+}
+
+@media (min-aspect-ratio: 650/1000){
+    .news form input{
+        width: 40%;
     }
 }
 
