@@ -25,7 +25,7 @@
 
 .menu-hamburguer{
     position: fixed;
-    left: -150px;
+    left: -250px;
     top: 0;
 }
 
@@ -38,14 +38,14 @@
     padding: 15px;
     position: absolute;
     top: 10px;
-    left: 155px;
+    left: 280px;
     z-index: 1;
 }
 
 .barra{
     background: #3F82C4;
     height: 100vh;
-    width: 150px;
+    width: 250px;
     transition: all .3s linear;
 }
 
@@ -62,20 +62,42 @@ nav a{
 }
 
 .link{
-    padding: 20px;
+    padding: 25px;
+    padding-left: 110px;
     font-family: "Arial";
     font-size: 16px;
     transition: all .3s linear;
     color: white;
-    
+    font-family: "Roboto"
 }
 
-.first-link{
-    padding-top 150px;
+.link-img{
+    position: absolute;
+    left: 40px;
+}
+
+.img-1{
+    top: 10px;
+}
+
+.img-2{
+    top: 75px; 
+}
+
+.img-3{
+    top: 147px; 
+}
+
+.img-4{
+    top: 213px; 
+}
+
+.img-5{
+    top: 279px; 
 }
 
 #check:checked ~ .barra{
-    transform: translateX(150px);
+    transform: translateX(250px);
 };
 
 #check:checked ~ .barra nav a .link{
