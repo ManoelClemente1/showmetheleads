@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/flexbox.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/newsletter.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     
@@ -53,7 +54,7 @@
                         <img class="link-img img-3" src="img/sobre_icon.jpg" alt="icone home">
                     </a>
                     <a href="post.html">
-                        <div class="link">Post</div>
+                        <div class="link">Quiz</div>
                         <img class="link-img img-4" src="img/sobre_icon.jpg" alt="icone home">
                     </a>
                     <a href="#">
@@ -73,7 +74,7 @@
         <div class="container">
             <div class="conteudo-principal-bloco">
                <h1>Fale com a gente!!!</h1>
-               <h3>Esse é o espaço que você para tira suas dúvidas, elogiar a gente por algo que você amou ou reclamar de alguma coisa que não foi legal :( Fala aí, estamos aqui para te ajudar!!!</h3>
+               <h3>Esse é o espaço que você para tira suas dúvidas, elogiar a gente por algo que você amou ou reclamar de alguma coisa que não foi legal :( Fala aí, estamos aqui para te ajudar!</h3>
                 <div class="conteudoPrincipal-formulario">
                     <form id="form" method="POST" action="https://smtl.gama.academy/leads/3d935292-39f4-11ea-a319-e90cfbc180ef"> <!---->
                         <div class="conteudoPrincipal-formulario-input" >
@@ -108,6 +109,36 @@
                       </form>
                 </div>                   
             </div>                    
+        </div>
+        <div class="news">
+            <div class="titulo-news"><h2>Assine nossa newsletter e saiba mais sobre tecnologia</h2></div>
+            <img src="img/newsletter_image.jpg" alt="Imagem ilustrativa de pessoa usando o celular">
+            <form id="form" method="POST" action="https://smtl.gama.academy/leads/3d935292-39f4-11ea-a319-e90cfbc180ef"> <!---->
+                <div class="conteudoPrincipal-formulario-input" >
+                    <label for="nome">Nome</label>
+                    <input
+                    id="nome"
+                    name="name"
+                    type="text"
+                    pattern="^\D{2,}\s[\D\s]{2,}$"
+                    title="Digite seu nome completo"
+                    required
+                    />
+                </div>
+                <div class="conteudo-principal-formulario-input" >
+                    <label for="email">E-mail</label>
+                    <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    title="Digite um email válido"
+                    required
+                    />
+                </div>
+                <!--<input name="redirectTo" type="hidden"  /> value="https://gama.academy" -->
+                <input name="debugMode" type="hidden" value="true" />
+                <button type="submit">Enviar</button>
+              </form>
         </div>
     </main>
     <footer class="footer-base container-footer">

@@ -13,13 +13,12 @@
     line-height: 14px;
 }
 
-form{
+.conteudo-principal-bloco form{
     margin-top: 3em;
     width: 30em;
-    
 }
 
-input{
+.conteudo-principal-bloco input{
     width: 100%;
     height: 2.5em;
     margin-bottom: 1em;
@@ -29,7 +28,7 @@ input{
     font-size: 20px;
 }
 
-button{
+.conteudo-principal-bloco button{
     width: 100%;
     height: 2em;
     margin-top: 1em;
@@ -40,7 +39,7 @@ button{
     color: #3F82C4;
 }
 
-h1{
+.conteudo-principal-bloco h1{
     margin-top: 5em;
     margin-bottom: 1em;
     text-align: center;
@@ -48,7 +47,7 @@ h1{
     line-height: 14px;
 }
 
-h3{
+.conteudo-principal-bloco h3{
     width: 25em;
     margin: auto;
     text-align: start;
@@ -56,7 +55,14 @@ h3{
     font-size: 12px;
 }
 
+@media (max-aspect-ratio: 350/1000){
+    .conteudo-principal-bloco h3{
+        width: 20em;
+    }
+}
+
 textarea{
+    width: 100%;
     margin-top: 1em;
     font-size: 20px;
 }

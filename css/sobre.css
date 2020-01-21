@@ -23,8 +23,15 @@ figure{
 }
 
 figure img{
+    width: 25em;
     border: 1.2px solid lightgrey;
     border-radius: 10px;
+}
+
+@media (max-aspect-ratio: 380/1000){
+    figure img{
+        width: 18em;
+    }
 }
 
 figcaption{
@@ -36,4 +43,8 @@ p{
     text-align: justify;
     margin: .5em;
     color: black;
+}
+
+.textos{
+    margin-bottom: 3em;
 }

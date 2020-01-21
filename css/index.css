@@ -4,7 +4,7 @@
 
 .conteudo-principal-bloco{
     margin-top: 2em;
-    margin-bottom: 10em;
+    margin-bottom: 6em;
     font-family: "Roboto";
     color: #3F82C4;
     font-style: normal;
@@ -21,4 +21,12 @@ figure img{
     width: 25em;
     margin-bottom: 1em;
     margin-top: 5em;
+}
+
+@media (max-aspect-ratio: 370/1000){
+    figure img{
+        width: 22em;
+        margin-bottom: 1em;
+        margin-top: 5em;
+    }
 }
