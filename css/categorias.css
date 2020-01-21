@@ -1,0 +1,22 @@
+/* Categorias */
+
+.conteudo-principal-bloco{
+    margin-top: 8em;
+    margin-bottom: 10em;
+    font-family: "Roboto";
+    color: #3F82C4;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+figure{
+    text-align: center;
+}
+
+figure img{
+    width: 10em;
+    margin: 2em;
+    margin-bottom: 1em;
+}

@@ -44,7 +44,7 @@
 
 .barra{
     background: #3F82C4;
-    height: 500px;
+    height: 100vh;
     width: 150px;
     transition: all .3s linear;
 }
