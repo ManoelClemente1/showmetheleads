@@ -1,7 +1,71 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
 /* Index */
 
 /* Conteudo principal */
 
+.conteudoPrincipal-img{
+    width: 139%;
+    margin-top: 10%;    
+}
+.conteudo-principal-chama{
+    margin-top: 16%;
+    width: 75%;
+}
+
+.conteudo-principal-title{
+    color: #3F82C4;
+    font-size: 48px;
+    font-weight: bold;
+
+}
+
+.conteudo-principal-title2{
+    color: #3F82C4;
+    font-size: 48px;
+    font-weight: bold;
+
+}
+
+.outras-noticias {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.conteudo-principal-subtitle{
+    color: #797979;
+    font-size: 24px;
+}
+
+.conteudo-principal-assuntos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:  wrap;
+}
+
+.conteudo-principal-assuntos-link{
+    width: 21%;
+    margin-bottom: 15px;
+    color: #3F82C4;
+    font-size: 23px;
+}
+
+.conteudo-principal-assuntos-texto{
+    text-align: center;
+    width: 89%;
+}
+
+.conteudo-principal-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+
+}
+
+
+@media only screen and (max-width: 768px){
 .conteudo-principal-bloco{
     margin-top: 2em;
     margin-bottom: 6em;
@@ -23,6 +87,62 @@ figure img{
     margin-top: 5em;
 }
 
+.conteudo-principal-assuntos{
+    flex-direction: column;
+}
+
+.conteudo-principal-div{
+    height: 126px;
+}
+
+.conteudo-principal-assuntos-link{
+    width: 100%;    
+}
+
+.conteudo-principal-chama {
+    width: 100%;
+}
+
+.conteudoPrincipal-img{
+    width: 80%;
+    padding-left: 64px;
+    margin-top: 60%;
+}
+
+.conteudo-principal-title{
+    margin-top: 135px;
+    font-size: 36px;
+    margin-bottom: 7px;
+    line-height: 39px;
+}
+
+.conteudo-principal-title2{
+    font-size: 36px;
+    margin-bottom: 7px;
+    line-height: 39px;
+}
+
+.conteudo-principal-subtitle{
+    margin-bottom: 7px;
+    line-height: 33px;
+}
+
+.conteudo-principal-chama > a {
+    font-size: 23px;
+}
+
+.conteudo-principal-assuntos-link > img{
+    width: 95%;
+}
+
+.conteudo-principal-assuntos-texto{
+    width: 99%;
+    line-height: 1;
+}
+
+
+}
+
 @media (max-aspect-ratio: 370/1000){
     figure img{
         width: 22em;
@@ -30,3 +150,4 @@ figure img{
         margin-top: 5em;
     }
 }
+
