@@ -1,5 +1,7 @@
 /* Newsletter */
 
+/* Mobile */
+
 .news{
     background-color: #74D5DE;
     width: 100vw;
@@ -13,6 +15,7 @@
     width: 100%;
     margin: auto;
     position: relative;
+    z-index: 5;
 }
 
 .titulo-news h2{
@@ -97,4 +100,75 @@
     padding-right: 35px;
     border: none;
     border-radius: 5px;
+}
+
+
+/* Desktop */
+
+@media (min-aspect-ratio: 799/1000){
+    .news{
+        height: 220px;
+        margin-bottom: 85px;
+        position: relative;
+    }
+}
+
+@media (min-aspect-ratio: 799/1000){
+    .news img{
+        position: absolute;
+        width: 9em;
+        top: 30px;
+        left: 50px
+    }
+}
+
+@media (min-aspect-ratio: 1000/1000){
+    .news img{
+        left: 110px
+    }
+}
+
+@media (min-aspect-ratio: 1200/1000){
+    .news img{
+        left: 190px
+    }
+}
+
+@media (min-aspect-ratio: 1400/1000){
+    .news img{
+        left: 300px
+    }
+}
+
+@media (min-aspect-ratio: 1600/1000){
+    .news img{
+        left: 420px
+    }
+}
+
+@media (min-aspect-ratio: 1800/1000){
+    .news img{
+        left: 490px
+    }
+}
+
+@media(min-aspect-ratio: 800/1000){
+    .titulo-news h2{
+        width: 25em;
+        padding-top: 1em;
+    }
+}
+
+@media(min-aspect-ratio: 1000/1000){
+    .titulo-news h2{
+        width: 25em;
+        padding-top: 1em;
+        font-size: 22px;
+    }
+}
+
+@media (min-aspect-ratio: 799/1000){
+    .news form{
+        
+    }
 }
