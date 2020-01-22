@@ -38,7 +38,7 @@
     }
 }
 
-@media (min-aspect-ratio: 1600/1000){
+@media (min-aspect-ratio: 1600/1000) and (orientation: landscape){
     .logo-buscador-div{
         width: 50vw;
         text-align: start;
