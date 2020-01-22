@@ -92,7 +92,7 @@
 }
 
 .news form button{
-    background-color: #3F82C4;
+    background-color: #FF8A00;
     color: white;
     margin: .6em;
     padding: 10px;
@@ -118,7 +118,7 @@
         position: absolute;
         width: 9em;
         top: 30px;
-        left: 50px
+        left: 60px
     }
 }
 
@@ -167,8 +167,14 @@
     }
 }
 
-@media (min-aspect-ratio: 799/1000){
-    .news form{
-        
+@media (min-aspect-ratio: 900/1000){
+    .news form input{
+        width: 400px;
+    }
+}
+
+@media (min-aspect-ratio: 900/1000){
+    .news form label{
+        width: 80px;
     }
 }
