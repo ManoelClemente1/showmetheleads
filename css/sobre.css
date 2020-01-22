@@ -42,9 +42,41 @@ figcaption{
 p{
     text-align: justify;
     margin: .5em;
-    color: black;
+    color: #797979;;
 }
 
-.textos{
-    margin-bottom: 3em;
+@media(orientation: portrait){
+    .textos{
+        margin-bottom: 5em;
+    }
+}
+
+@media(orientation: landscape){
+    .textos{
+        margin-bottom: 10em;
+    }
+}
+
+@media(orientation: portrait){
+    .invisivel-no-mobile{
+        display: none;
+    }
+}
+
+.invisivel-no-mobile img{
+       border: none;
+    width: 65%;
+    }
+
+@media(orientation: landscape){
+    .invisivel-no-desktop{
+        display: none;
+    }
+}
+
+@media(orientation: landscape){
+    p{
+        width: 75%;
+        margin: auto;
+    }
 }
