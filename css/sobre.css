@@ -19,6 +19,9 @@ h1{
 
 .subtitulo-principal{
     color: #797979;
+    margin: auto;
+    width: 60%;
+    font-size: 16px;
 }
 
 section{
@@ -110,12 +113,13 @@ section img{
     }
 }
 
-.textos h2{
+.textos h3{
     margin: auto;
     margin-bottom: 1.5em;
     width: 60%;
     font-size: 16px;
     line-height: 1.2em;
+    text-transform: uppercase;
 }
 
 figure{
