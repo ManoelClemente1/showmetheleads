@@ -8,13 +8,114 @@
     color: #3F82C4;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 h1{
     text-align: center;
     font-size: 25px;
+}
+
+.subtitulo-principal{
+    color: #797979;
+}
+
+section{
+    margin: 4em;
+    margin-top: 4em;
+    text-align: center;
+}
+
+.artigo-1::before{
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: lightgray;
+    display: block;
+    margin: auto;
+    margin-bottom: 4em;
+}
+
+.artigo-1::after{
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: lightgray;
+    display: block;
+    margin: auto;
+    margin-top: 5em;
+}
+
+.artigo-2::after{
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: lightgray;
+    display: block;
+    margin: auto;
+    margin-top: 5em;
+}
+
+section img{
+    width: 16em;
+    margin: 1.2em;
+    margin-top: 0em;
+    box-shadow: 3px 3px 5px .1px black;
+}
+
+@media(max-aspect-ratio: 450/1000){
+    section img{
+        width: 100%;
+    }
+}
+
+.imagem-eduardo{
+    margin-left: 8em;
+    float: left;
+}
+
+@media(orientation: portrait){
+    .imagem-eduardo{
+        margin-left: 0em;
+        margin-right: 0em;
+        float: none;
+    }
+}
+
+.imagem-joao{
+    margin-top: .2em;
+    margin-right: 8em;
+    float: right;
+}
+
+@media(orientation: portrait){
+    .imagem-joao{
+        margin-left: 0em;
+        margin-right: 0em;
+        float: none;
+    }
+}
+
+.imagem-laura{
+    margin-left: 8em;
+    float: left;
+}
+
+@media(orientation: portrait){
+    .imagem-laura{
+        margin-left: 0em;
+        margin-right: 0em;
+        float: none;
+    }
+}
+
+.textos h2{
+    margin: auto;
+    margin-bottom: 1.5em;
+    width: 60%;
+    font-size: 16px;
+    line-height: 1.2em;
 }
 
 figure{
@@ -28,9 +129,15 @@ figure img{
     border-radius: 10px;
 }
 
-@media (max-aspect-ratio: 380/1000){
+@media (max-aspect-ratio: 450/1000){
     figure img{
         width: 18em;
+    }
+}
+
+@media (max-aspect-ratio: 380/1000){
+    figure img{
+        width: 16em;
     }
 }
 
@@ -41,8 +148,9 @@ figcaption{
 
 p{
     text-align: justify;
-    margin: .5em;
-    color: #797979;;
+    color: #797979;
+    margin: auto;
+    margin-bottom: .2em;
 }
 
 @media(orientation: portrait){
@@ -53,7 +161,7 @@ p{
 
 @media(orientation: landscape){
     .textos{
-        margin-bottom: 10em;
+        margin-bottom: 0em;
     }
 }
 
@@ -64,8 +172,8 @@ p{
 }
 
 .invisivel-no-mobile img{
-       border: none;
-    width: 65%;
+        border: none;
+        width: 65%;
     }
 
 @media(orientation: landscape){
@@ -75,8 +183,29 @@ p{
 }
 
 @media(orientation: landscape){
-    p{
+    p, h2{
         width: 75%;
-        margin: auto;
     }
+}
+
+@media(orientation: portrait){
+    p{
+        width: 100%;
+    }
+}
+
+.botao-quiz{
+    width: 8em;
+    height: 3em;
+    font-size: 25px;
+    background-color: white;
+    background-color: #74D5DE;
+    border-radius: 5px;
+    margin-top: 2em;
+    color: white;
+}
+
+.botao-quiz a{
+    text-decoration: none;
+    font-weight: bold;
 }
