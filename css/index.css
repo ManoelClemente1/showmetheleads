@@ -1,0 +1,32 @@
+/* Index */
+
+/* Conteudo principal */
+
+.conteudo-principal-bloco{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    font-family: "Roboto";
+    color: #3F82C4;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+figure{
+    text-align: center;
+}
+
+figure img{
+    width: 25em;
+    margin-bottom: 1em;
+    margin-top: 5em;
+}
+
+@media (max-aspect-ratio: 370/1000){
+    figure img{
+        width: 22em;
+        margin-bottom: 1em;
+        margin-top: 5em;
+    }
+}

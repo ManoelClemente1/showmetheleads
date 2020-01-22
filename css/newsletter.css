@@ -1,0 +1,82 @@
+/* Newsletter */
+
+.news{
+    background-color: #74D5DE;
+    width: 100vw;
+    height: 400px;
+    margin-bottom: 85px;
+    position: relative;
+    text-align: center;
+}
+
+.titulo-news{
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.titulo-news h2{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+    width: 12em;
+    padding-top: 1em;
+    text-align: start;
+    margin: auto;
+    margin-bottom: .5em;
+}
+
+.news img{
+    width: 130px;
+}
+
+.news form{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3F82C4;
+}
+
+.news form label{
+    width: 15%;
+    background-color: white;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+.news form input{
+    width: 75%;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+}
+
+@media (max-aspect-ratio: 500/1000){
+    .news form label{
+        font-size: 12px
+    }
+}
+
+@media (max-aspect-ratio: 350/1000){
+    .news form label{
+        font-size: 10px
+    }
+}
+
+.news form button{
+    background-color: #3F82C4;
+    color: white;
+    margin: .6em;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: none;
+    border-radius: 5px;
+}

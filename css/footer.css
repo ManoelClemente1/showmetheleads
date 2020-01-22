@@ -1,0 +1,54 @@
+/* Footer */
+
+.container-footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-base{
+    position: fixed;
+    width: 100vw;
+    height: 85px;
+    left: 0px;
+    bottom: 0px;
+    background: #3F82C4;
+    z-index: 10;
+}
+
+
+/* Icones Redes Sociais */
+
+.social-medias{
+    margin-top: 8px;
+    display: inline-block;
+    
+}
+
+.facebook-icon img{
+    transform: translateY(2px) translateX(12px) scale(.7);
+}
+
+.instagram-icon img{
+    transform: translateY(-2px) scale(.7);
+}
+
+.twitter-icon img{
+    transform: translateX(-12px) scale(.7);
+}
+
+
+/* Copyright */
+
+.copyright-div{
+    position: absolute;
+    bottom: 8px;
+}
+
+.copyright{
+    color: white;
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 10px;
+   font-family: "Arial";
+}

@@ -1,0 +1,50 @@
+/* Sobre */
+
+/* Conteudo principal */
+
+.conteudo-principal-bloco{
+    margin-top: 110px;
+    font-family: "Roboto";
+    color: #3F82C4;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+h1{
+    text-align: center;
+    font-size: 25px;
+}
+
+figure{
+    margin: 2em;
+    text-align: center;
+}
+
+figure img{
+    width: 25em;
+    border: 1.2px solid lightgrey;
+    border-radius: 10px;
+}
+
+@media (max-aspect-ratio: 380/1000){
+    figure img{
+        width: 18em;
+    }
+}
+
+figcaption{
+    font-size: 8px;
+    color: black;
+}
+
+p{
+    text-align: justify;
+    margin: .5em;
+    color: black;
+}
+
+.textos{
+    margin-bottom: 3em;
+}
