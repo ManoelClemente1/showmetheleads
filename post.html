@@ -17,6 +17,14 @@
     <link rel="stylesheet" href="css/newsletter.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+
+            <script type="text/javascript">
+                
+                function abrir(){
+                    document.getElementById('popup').style.display = 'block';
+                }
+
+            </script>
     
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -25,6 +33,11 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-P8RXR66');</script>
     <!-- End Google Tag Manager -->
+    <script type="text/javascript">
+        function abrir(){
+            document.getElementById('popup').style.display = 'flex';
+        }
+    </script>
 </head>
 <body> 
     <!-- Google Tag Manager (noscript) -->
@@ -97,15 +110,18 @@
         <div class="container">          
             <div class="conteudo-principal-bloco">
                 <h1>Faça nosso Quiz!</h1>
-                <div class="quiz">
+                <a onMouseOver="abrir();">Passar o mouse para abrir
+                <div class="quiz" >
                      <!-- Código do Quiz-->
-                    <div id="interact-5e2609ad59e9660014f70826"></div><script type="text/javascript">var app_5e2609ad59e9660014f70826;(function(d, t){var s=d.createElement(t),options={"appId":"5e2609ad59e9660014f70826","aspect_ratio":"100%","async":true,"host":"quiz.tryinteract.com"};s.src='https://i.tryinteract.com/embed/app.js';s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs)if(rs!='complete')if(rs!='loaded')return;try{app_5e2609ad59e9660014f70826=new InteractApp();app_5e2609ad59e9660014f70826.initialize(options);app_5e2609ad59e9660014f70826.display();}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr);})(document,'script');</script>
+                     <div id="interact-5e264f6859e9660014f70951"></div><script type="text/javascript">var app_5e264f6859e9660014f70951;(function(d, t){var s=d.createElement(t),options={"appId":"5e264f6859e9660014f70951","width":"800","height":"800","async":true,"host":"quiz.tryinteract.com","auto_resize":false};s.src='https://i.tryinteract.com/embed/app.js';s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs)if(rs!='complete')if(rs!='loaded')return;try{app_5e264f6859e9660014f70951=new InteractApp();app_5e264f6859e9660014f70951.initialize(options);app_5e264f6859e9660014f70951.display();}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr);})(document,'script');</script>
                     <!-- Fim do código do Quiz -->
                 </div>
+            </a>
             </div>                   
         </div>
         <div class="news">
             <div class="titulo-news"><h2>Assine nossa newsletter e saiba mais sobre tecnologia</h2></div>
+            
             <img src="img/newsletter_image.jpg" alt="Imagem ilustrativa de pessoa usando o celular">
             <form id="form" method="POST" action="https://smtl.gama.academy/leads/3d935292-39f4-11ea-a319-e90cfbc180ef"> <!---->
                 <div class="conteudoPrincipal-formulario-input" >
@@ -133,8 +149,44 @@
                 <input name="debugMode" type="hidden" value="true" />
                 <button type="submit">Enviar</button>
               </form>
-        </div>               
+
+        </div> 
+        
+            <div id="popup" class="popup">
+                <div class="titulo-news"><h2>Assine nossa newsletter e saiba mais sobre tecnologia</h2></div>
+                
+                <img src="img/newsletter_image.jpg" alt="Imagem ilustrativa de pessoa usando o celular">
+                <form id="form" method="POST" action="https://smtl.gama.academy/leads/3d935292-39f4-11ea-a319-e90cfbc180ef"> <!---->
+                    <div class="conteudoPrincipal-formulario-input" >
+                        <label for="nome">Nome</label>
+                        <input
+                        id="nome"
+                        name="name"
+                        type="text"
+                        pattern="^\D{2,}\s[\D\s]{2,}$"
+                        title="Digite seu nome completo"
+                        required
+                        />
+                    </div>
+                    <div class="conteudo-principal-formulario-input" >
+                        <label for="email">E-mail</label>
+                        <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        title="Digite um email válido"
+                        required
+                        />
+                    </div>
+                    <!--<input name="redirectTo" type="hidden"  /> value="https://gama.academy" -->
+                    <input name="debugMode" type="hidden" value="true" />
+                    <button type="submit">Enviar</button>
+                  </form>
+    
+            </div> 		
+                     
     </main>
+    
     <footer>
         <footer class="footer-base container-footer">
         <div class="social-medias">
@@ -147,5 +199,6 @@
         </div>
     </footer> 
     </footer>  
+
 </body>
 </html>
