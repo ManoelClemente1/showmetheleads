@@ -5,10 +5,15 @@
 .news{
     background-color: #74D5DE;
     width: 100vw;
-    height: 400px;
-    margin-bottom: 85px;
+    height: 270px;
     position: relative;
     text-align: center;
+}
+
+@media(orientation: portrait){
+    .news{
+        height: 450px;
+    }
 }
 
 .titulo-news{
@@ -43,6 +48,7 @@
     font-size: 18px;
     line-height: 21px;
     color: #3F82C4;
+    margin-bottom: 100px;
 }
 
 .news form label{
@@ -105,76 +111,62 @@
 
 /* Desktop */
 
-@media (min-aspect-ratio: 799/1000){
-    .news{
-        height: 220px;
-        margin-bottom: 85px;
-        position: relative;
-    }
-}
-
-@media (min-aspect-ratio: 799/1000){
-    .news img{
-        position: absolute;
-        width: 9em;
-        top: 30px;
-        left: 60px
-    }
-}
-
-@media (min-aspect-ratio: 1000/1000){
-    .news img{
-        left: 110px
-    }
-}
-
-@media (min-aspect-ratio: 1200/1000){
-    .news img{
-        left: 190px
-    }
-}
-
-@media (min-aspect-ratio: 1400/1000){
-    .news img{
-        left: 300px
-    }
-}
-
-@media (min-aspect-ratio: 1600/1000){
-    .news img{
-        left: 420px
-    }
-}
-
-@media (min-aspect-ratio: 1800/1000){
-    .news img{
-        left: 292px;
-    }
-}
-
-@media(min-aspect-ratio: 800/1000){
+@media(orientation: landscape){
     .titulo-news h2{
-        width: 25em;
+        width: 100%;
+        text-align: center;
         padding-top: 1em;
     }
 }
 
 @media(min-aspect-ratio: 1000/1000){
     .titulo-news h2{
-        width: 25em;
-        padding-top: 1em;
         font-size: 22px;
     }
 }
 
-@media (min-aspect-ratio: 900/1000){
+@media (orientation: landscape){
+    .news-div-desktop{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media (orientation: landscape){
+    .news form input{
+        margin-top: 1em
+    }
+}
+
+@media (orientation: landscape) and (min-width: 400px){
+    .news form input{
+        width: 200px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 550px){
+    .news form input{
+        width: 300px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 700px){
     .news form input{
         width: 400px;
     }
 }
 
-@media (min-aspect-ratio: 900/1000){
+@media (orientation: landscape) and (min-width: 500px){
     .news form label{
         width: 80px;
+    }
+}
+
+@media (orientation: landscape){
+    .news form button{
+        margin-top: 1.5em;
+        margin-right: 8em;
     }
 }
