@@ -31,7 +31,7 @@
     font-size: 24px;
 }
 
-.conteudo-principal-assuntos {
+.conteudo-principal-assuntos{
     display: flex;
     justify-content: space-around;
     flex-wrap:  wrap;
@@ -54,7 +54,7 @@
 }
 
 .conteudo-principal-assuntos-link{
-    width: 21%;
+    width: 30%;
     margin-bottom: 15px;
     color: #3F82C4;
     font-size: 23px;
