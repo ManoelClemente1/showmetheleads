@@ -17,13 +17,16 @@
     <link rel="stylesheet" href="css/newsletter.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/popup.css">
 
             <script type="text/javascript">
                 
                 function abrir(){
-                    document.getElementById('popup').style.display = 'block';
+                    document.getElementById('popup-aviso').style.display = 'block';
                 }
-
+                function fechar(){
+                document.getElementById('popup-aviso').style.display =  'none';
+                }
             </script>
     
     <!-- Google Tag Manager -->
@@ -33,11 +36,6 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-P8RXR66');</script>
     <!-- End Google Tag Manager -->
-    <script type="text/javascript">
-        //function abrir(){
-          //  document.getElementById('popup').style.display = 'flex';
-       // }
-    </script>
 </head>
 <body> 
     <!-- Google Tag Manager (noscript) -->
@@ -110,13 +108,46 @@
         <div class="container">          
             <div class="conteudo-principal-bloco">
                 <h1>Faça nosso Quiz!</h1>
-                <!-- <a onMouseOver="abrir();">Passar o mouse para abrir-->
+                <a onMouseOver="abrir();">
                 <div class="quiz" >
                      <!-- Código do Quiz-->
                      <div id="interact-5e264f6859e9660014f70951"></div><script type="text/javascript">var app_5e264f6859e9660014f70951;(function(d, t){var s=d.createElement(t),options={"appId":"5e264f6859e9660014f70951","width":"800","height":"800","async":true,"host":"quiz.tryinteract.com","auto_resize":false};s.src='https://i.tryinteract.com/embed/app.js';s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs)if(rs!='complete')if(rs!='loaded')return;try{app_5e264f6859e9660014f70951=new InteractApp();app_5e264f6859e9660014f70951.initialize(options);app_5e264f6859e9660014f70951.display();}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr);})(document,'script');</script>
                     <!-- Fim do código do Quiz -->
                 </div>
-             <!--</a>-->
+             </a>
+               <!-- POP UP-->
+               <div id="popup-aviso" class="popup-aviso">
+                <div class="titulo-news"><h2>Assine nossa newsletter e saiba mais sobre tecnologia</h2></div>
+                
+                <img src="img/newsletter_image.jpg" alt="Imagem ilustrativa de pessoa usando o celular">
+                <form id="form" method="POST" action="https://smtl.gama.academy/leads/3d935292-39f4-11ea-a319-e90cfbc180ef"> <!---->
+                    <div class="conteudoPrincipal-formulario-input" >
+                        <label for="nome">Nome</label>
+                        <input
+                        id="nome"
+                        name="name"
+                        type="text"
+                        pattern="^\D{2,}\s[\D\s]{2,}$"
+                        title="Digite seu nome completo"
+                        required
+                        />
+                    </div>
+                    <div class="conteudo-principal-formulario-input" >
+                        <label for="email">E-mail</label>
+                        <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        title="Digite um email válido"
+                        required
+                        />
+                    </div>
+                     
+                    <input name="debugMode" type="hidden" value="true" />
+                    <button type="submit" onclick="fechar()">Enviar</button>
+                  </form>                                     
+            </div> 		
+        <!-- POP UP FIM-->         
             </div>                   
         </div>
         <div class="news">
@@ -145,89 +176,14 @@
                     required
                     />
                 </div>
-<<<<<<< HEAD
-                <input name="redirectTo" type="hidden" value="https://vctech.com.br/sucess.html"  /> 
-=======
-                <input name="redirectTo" type="hidden" value="https://vctech.com.br/sucess.html" />
->>>>>>> 60fc58081a442bc3600b6aac4ff36cf985abe559
+                <input name="redirectTo" type="hidden" value="https://vctech.com.br/sucess.html"  />
                 <input name="debugMode" type="hidden" value="true" />
                 <button type="submit">Enviar</button>
               </form>
             </div>
         </div>
         
-<<<<<<< HEAD
-            <div id="popup" class="popup">
-                <div class="titulo-news"><h2>Assine nossa newsletter e saiba mais sobre tecnologia</h2></div>
-                
-                <img src="img/newsletter_image.jpg" alt="Imagem ilustrativa de pessoa usando o celular">
-                <form id="form" method="POST" action="https://smtl.gama.academy/leads/3d935292-39f4-11ea-a319-e90cfbc180ef"> <!---->
-                    <div class="conteudoPrincipal-formulario-input" >
-                        <label for="nome">Nome</label>
-                        <input
-                        id="nome"
-                        name="name"
-                        type="text"
-                        pattern="^\D{2,}\s[\D\s]{2,}$"
-                        title="Digite seu nome completo"
-                        required
-                        />
-                    </div>
-                    <div class="conteudo-principal-formulario-input" >
-                        <label for="email">E-mail</label>
-                        <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        title="Digite um email válido"
-                        required
-                        />
-                    </div>
-                    <input name="redirectTo" type="hidden" value="https://vctech.com.br/sucess.html"  /> 
-                    <input name="debugMode" type="hidden" value="true" />
-                    <button type="submit">Enviar</button>
-                  </form>
-    
-            </div> 		
-                     
-=======
-        <!-- POPUP
-           
-           <div id="popup" class="popup">
-            <div class="titulo-news"><h2>Assine nossa newsletter e saiba mais sobre tecnologia</h2></div>
-
-            <img src="img/newsletter_image.jpg" alt="Imagem ilustrativa de pessoa usando o celular">
-            <form id="form" method="POST" action="https://smtl.gama.academy/leads/3d935292-39f4-11ea-a319-e90cfbc180ef">
-                <div class="conteudoPrincipal-formulario-input" >
-                    <label for="nome">Nome</label>
-                    <input
-                    id="nome"
-                    name="name"
-                    type="text"
-                    pattern="^\D{2,}\s[\D\s]{2,}$"
-                    title="Digite seu nome completo"
-                    required
-                    />
-                </div>
-                <div class="conteudo-principal-formulario-input" >
-                    <label for="email">E-mail</label>
-                    <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    title="Digite um email válido"
-                    required
-                    />
-                </div>
-                <input name="redirectTo" type="hidden" value="https://vctech.com.br/sucess.html" />
-                <input name="debugMode" type="hidden" value="true" />
-                <button type="submit">Enviar</button>
-              </form>
-        </div>
-        	
-        -->
-        	                                       
->>>>>>> 60fc58081a442bc3600b6aac4ff36cf985abe559
+        
     </main>
     
     <footer class="footer-base container-footer">
@@ -240,6 +196,7 @@
             <p class="copyright">&copy; 2020 Vctech All rights reserved<p>
         </div>
     </footer>  
-
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
