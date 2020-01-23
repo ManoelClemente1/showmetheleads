@@ -6,13 +6,13 @@
 
 @media(min-aspect-ratio: 800/1000){
     .logo-vc-tech{
-        margin-top: 10;
+        margin-left: 20vw;
     }
 }
 
 @media (min-aspect-ratio: 800/1000){
     .logo-buscador-div{
-        width: 90vw;
+        width: 100%;
         text-align: start;
     }
 }
@@ -153,9 +153,8 @@
 
 /* Menu Desktop */
 
-.desk-nav-links a{
+.menu-desktop a{
     text-decoration: none;
-    color: black;
 }
 
 .desk-link{
@@ -167,81 +166,47 @@
     color: white;
     position: absolute;
     top: 0;
+    text-align: center;
+}
+
+.desk-link p{
+    margin-top: .2em;
+    margin-left: 3.2em;
 }
 
 .desk-link-1{
-    right: 380px;
+    right: 35vw;
 }
 
 .desk-link-2{
-    right: 320px;
+    right: 31vw;
 }
 
 .desk-link-3{
-    right: 230px;
+    right: 27vw;
 }
 
 .desk-link-4{
-    right: 170px;
+    right: 23.9vw;
 }
 
 .desk-link-5{
-    right: 120px;
+    right: 20.4vw;
 }
 
 .desk-link-img{
     position: absolute;
-    width: 35px;
     margin-top: 10px;
     top: 0;
 }
 
-.desk-img-1{
-    right: 445px;
-}
-
-.desk-img-2{
-    right: 370px;
-}
-
-.desk-img-3{
-    right: 297px;
-}
-
-.desk-img-4{
-    right: 240px;
-}
-
-.desk-img-5{
-    right: 180px;
-}
-
-@media(min-aspect-ratio: 1000/1000){
-    .desk-link, .desk-link-img{
-        margin-right: 100px;
-    }
-}
-
-@media(min-aspect-ratio: 1200/1000){
-    .desk-link, .desk-link-img{
-        margin-right: 200px
-    }
-}
-
-@media(min-aspect-ratio: 1400/1000){
-    .desk-link, .desk-link-img{
-        margin-right: 300px
-    }
-}
-
-@media(min-aspect-ratio: 1600/1000){
-    .desk-link, .desk-link-img{
-        margin-right: 400px
-    }
-}
-
 @media(max-aspect-ratio: 799/1000){
-    .desk-nav-links{
+    .menu-desktop{
         display: none;
     }
+}
+
+.menu-desktop{
+    width: 100%;
+    position: relative;
 }
