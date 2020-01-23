@@ -1,0 +1,179 @@
+.modal_container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    top: 0; bottom: 0; 
+    left: 0; right:0;
+    margin: auto;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_container.mostrar{
+    display: flex;
+}
+.modal_aviso{
+    position: fixed;
+    top: 0; bottom: 0; 
+    left: 0; right:0;
+    margin: auto;
+    width: 45%;
+    height: 52%;
+    padding: 15px;
+    border-radius: 10px;
+    background: #74D5DE;
+    display: block;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+.modal_aviso{
+    width: 80%;
+    height: 73%;
+}
+.conteudoPrincipal-formulario-input > input{
+    width: 76%;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    
+}
+.conteudoPrincipal-formulario-input > label{
+    width: 100%;
+    background-color: white;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+}
+
+@keyframes modal_container{
+    from{
+    opacity: 0;
+    transform: translate(0,-60px,0);
+    }
+    to{
+    opacity: 1;
+    transform: translate(0,0,0);
+    }
+}
+
+.mostrar .modal_container{
+    animation: modal_container .10s;
+}
+
+.fechar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+    width: 50px;
+    right: 50px;
+    
+}
+
+/* Post */
+
+/* Conteudo principal */
+
+.popup-aviso-aviso img{
+    width: 130px;
+}
+
+.popup-aviso form{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3F82C4;
+    margin-bottom: 100px;
+}
+
+.popup-aviso form label{
+    width: 15%;
+    background-color: white;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+.popup-aviso form input{
+    width: 75%;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+}
+
+
+.popup-aviso form button{
+    background-color: #FF8A00;
+    color: white;
+    margin: .6em;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* Desktop */
+
+@media(orientation: landscape){
+    .titulo-news h2{
+        width: 100%;
+        text-align: center;
+        padding-top: 1em;
+    }
+}
+
+@media(min-aspect-ratio: 1000/1000){
+    .titulo-news h2{
+        font-size: 22px;
+    }
+}
+
+@media (orientation: landscape){
+    .popup-aviso-div-desktop{
+        width: 100%;
+        display: block;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media (orientation: landscape){
+    .popup-aviso form input{
+        margin-top: 1em
+    }
+}
+
+@media (orientation: landscape) and (min-width: 400px){
+    .popup-aviso form input{
+        width: 200px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 550px){
+    .popup-aviso form input{
+        width: 300px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 700px){
+    .popup-aviso form input{
+        width: 400px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 500px){
+    .popup-aviso form label{
+        width: 80px;
+    }
+}
+
