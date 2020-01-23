@@ -177,13 +177,13 @@ section p{
 }
 
 @media(orientation: landscape){
-    p, h2{
+    section p, h2{
         width: 75%;
     }
 }
 
 @media(orientation: portrait){
-    p{
+    section p{
         width: 100%;
     }
 }
