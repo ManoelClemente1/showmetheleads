@@ -65,8 +65,7 @@ section img{
 }
 
 .imagem{
-    margin-left: 8em;
-    float: left;
+    
 }
 
 @media(orientation: portrait){
