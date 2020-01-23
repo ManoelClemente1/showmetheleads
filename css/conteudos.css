@@ -9,7 +9,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 h1{
@@ -113,11 +113,11 @@ figcaption{
     color: black;
 }
 
-p{
+section p{
     text-align: justify;
     color: #797979;
     margin: auto;
-    margin-bottom: .2em;
+    margin-bottom: 1em;
 }
 
 @media(orientation: portrait){
