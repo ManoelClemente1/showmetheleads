@@ -1,48 +1,19 @@
 /* Menu */
 
 .logo-vc-tech{
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
-@media(min-aspect-ratio: 800/1000){
+@media(orientation: landscape){
     .logo-vc-tech{
-        margin-left: 20vw;
+        display: none;
     }
 }
 
-@media (min-aspect-ratio: 800/1000){
-    .logo-buscador-div{
-        width: 100%;
-        text-align: start;
-    }
-}
-
-@media (min-aspect-ratio:1000/1000){
-    .logo-buscador-div{
-        width: 80vw;
-        text-align: start;
-    }
-}
-
-@media (min-aspect-ratio: 1200/1000){
-    .logo-buscador-div{
-        width: 70vw;
-        text-align: start;
-    }
-}
-
-@media (min-aspect-ratio: 1400/1000){
-    .logo-buscador-div{
-        width: 60vw;
-        text-align: start;
-    }
-}
-
-@media (min-aspect-ratio: 1600/1000) and (orientation: landscape){
-    .logo-buscador-div{
-        width: 50vw;
-        text-align: start;
-    }
+.logo-vc-tech-2{
+    position: absolute;
+    left: -480px;
+    top: 22px;
 }
 
 .container-header{
@@ -54,11 +25,12 @@
 .menu-base{
     position: fixed;
     width: 100vw;
-    height: 77px;
+    height: 81px;
     left: 0px;
     top: 0px;
     background: #3F82C4;
-    z-index: 10;
+    z-index: 15;
+    box-shadow: 1px 0px 5px 1px black;
 }
 
 
@@ -66,11 +38,11 @@
 
 .menu-hamburguer{
     position: fixed;
-    left: -50vw;
+    left: -52vw;
     top: 0;
 }
 
-@media (min-aspect-ratio: 800/1000){
+@media (orientation: landscape){
     .menu-hamburguer{
         display: none;
     }
@@ -85,7 +57,7 @@
     padding: 15px;
     position: absolute;
     top: 10px;
-    left: 51.5vw;
+    left: 53.5vw;
     z-index: 1;
 }
 
@@ -94,6 +66,7 @@
     height: 100vh;
     width: 50vw;
     transition: all .3s linear;
+    box-shadow: 1px 6px 5px 1px black;
 }
 
 .nav-links{
@@ -105,53 +78,41 @@
 }
 
 .link{
-    padding: 25px;
-    padding-left: 100px;
-    font-size: 16px;
+    padding: 15%;
+    font-size: 100%;
     transition: all .3s linear;
     color: white;
     font-family: "Roboto";
 }
 
-@media (max-aspect-ratio: 400/1000){
-    .link{
-        font-size: 14px;
-        padding: 26px;
-        padding-left: 90px;
-    }
-}
-
-.link-img{
-    position: absolute;
-    left: 40px;
-}
-
-.img-1{
-    top: 10px;
-}
-
-.img-2{
-    top: 75px; 
-}
-
-.img-3{
-    top: 147px; 
-}
-
-.img-4{
-    top: 213px; 
-}
-
-.img-5{
-    top: 279px; 
+.link p{
+    color: white;
+    text-align: center;
 }
 
 #check:checked ~ .barra{
-    transform: translateX(50vw);
-};
+    transform: translateX(52vw);
+}
 
 
 /* Menu Desktop */
+
+.menu-desktop{
+    width: 100%;
+    position: relative;
+    text-align: center
+}
+
+@media (orientation:portrait){
+    .menu-desktop{
+        display: none;
+    }
+}
+
+.links-div-desk{
+    position: absolute;
+    left: 62vw;
+}
 
 .menu-desktop a{
     text-decoration: none;
@@ -175,38 +136,32 @@
 }
 
 .desk-link-1{
-    right: 35vw;
+    right: 270px;
+    z-index: 5;
 }
 
 .desk-link-2{
-    right: 31vw;
+    right: 195px;
+    z-index: 4;
 }
 
 .desk-link-3{
-    right: 27vw;
+    right: 122px;
+    z-index: 3;
 }
 
 .desk-link-4{
-    right: 23.9vw;
+    right: 65px;
+    z-index: 2;
 }
 
 .desk-link-5{
-    right: 20.4vw;
+    right: 0px;
+    z-index: 1;
 }
 
 .desk-link-img{
     position: absolute;
     margin-top: 10px;
     top: 0;
-}
-
-@media(max-aspect-ratio: 799/1000){
-    .menu-desktop{
-        display: none;
-    }
-}
-
-.menu-desktop{
-    width: 100%;
-    position: relative;
 }

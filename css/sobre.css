@@ -40,16 +40,6 @@ section{
     margin-bottom: 4em;
 }
 
-.artigo-1::after{
-    content: "";
-    width: 80%;
-    height: 1px;
-    background-color: lightgray;
-    display: block;
-    margin: auto;
-    margin-top: 5em;
-}
-
 .artigo-2::after{
     content: "";
     width: 80%;
@@ -128,20 +118,20 @@ figure{
 }
 
 figure img{
-    width: 25em;
+    width: 20em;
     border: 1.2px solid lightgrey;
     border-radius: 10px;
 }
 
 @media (max-aspect-ratio: 450/1000){
     figure img{
-        width: 18em;
+        width: 17em;
     }
 }
 
 @media (max-aspect-ratio: 380/1000){
     figure img{
-        width: 16em;
+        width: 15em;
     }
 }
 

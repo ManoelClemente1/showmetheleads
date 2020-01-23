@@ -26,11 +26,6 @@
     margin-bottom: 25px;
 }
 
-.conteudo-principal-subtitle{
-    color: #797979;
-    font-size: 24px;
-}
-
 .conteudo-principal-assuntos{
     display: flex;
     justify-content: space-around;
@@ -48,10 +43,11 @@
 }
 
 .conteudo-principal-assuntos-link figcaption{
-    font-size: 11px;
+    font-size: 12px;
     line-height: 15px;
     text-align: center;
-    width: 100%
+    width: 100%;
+    color: #3F82C4;
 }
 
 .conteudo-principal-div{
@@ -59,7 +55,6 @@
     justify-content: center;
     align-items: center;
     height: 350px;
-
 }
 
 .conteudo-principal-assuntos{
