@@ -1,21 +1,84 @@
-/* Post */
+.modal_container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    top: 0; bottom: 0; 
+    left: 0; right:0;
+    margin: auto;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
 
-/* Conteudo principal */
-
-.popup-aviso{
+.modal_container.mostrar{
+    display: flex;
+}
+.modal_aviso{
     position: fixed;
     top: 0; bottom: 0; 
     left: 0; right:0;
     margin: auto;
     width: 45%;
-    height: 71%;
+    height: 52%;
     padding: 15px;
     border-radius: 10px;
     background: #74D5DE;
-    display: none;
+    display: block;
     text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+.modal_aviso{
+    width: 80%;
+    height: 73%;
+}
+.conteudoPrincipal-formulario-input > input{
+    width: 76%;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
     
 }
+.conteudoPrincipal-formulario-input > label{
+    width: 100%;
+    background-color: white;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+}
+
+@keyframes modal_container{
+    from{
+    opacity: 0;
+    transform: translate(0,-60px,0);
+    }
+    to{
+    opacity: 1;
+    transform: translate(0,0,0);
+    }
+}
+
+.mostrar .modal_container{
+    animation: modal_container .10s;
+}
+
+.fechar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+    width: 50px;
+    right: 50px;
+    
+}
+
+/* Post */
+
+/* Conteudo principal */
 
 .popup-aviso-aviso img{
     width: 130px;
@@ -114,4 +177,3 @@
     }
 }
 
-}
