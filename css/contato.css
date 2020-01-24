@@ -13,13 +13,25 @@
     line-height: 14px;
 }
 
+@media(max-height: 550px){
+    .conteudo-principal-bloco{
+        margin-bottom: 10em;
+    }
+}
+
+@media(min-width: 550px){
+    .conteudo-principal-bloco{
+        margin-bottom: 12em;
+    }
+}
+
 .conteudo-principal-bloco form{
     width: 30em;
     margin: auto;
     margin-top: 3em;
 }
 
-@media(orientation: portrait){
+@media(max-width: 991px){
     .conteudo-principal-bloco form{
         width: 80%;
         margin-top: 2em;
@@ -44,8 +56,6 @@
     border-radius: 10px;
     background-color: #74D5DE;
     color: white;
-    font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 21px;
@@ -67,15 +77,28 @@
     }
 }
 
+@media(max-width: 450px){
+    .conteudo-principal-bloco h1{
+        font-size: 20px;
+        margin-top: 8em
+    }
+}
+
 .conteudo-principal-bloco h2{
     width: 100%;
     margin: auto;
-    text-align: start;
     font-size: 16px;
+    line-height: 18px;
     text-align: center;
 }
 
 @media(orientation: portrait){
+    .conteudo-principal-bloco h2{
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 450px){
     .conteudo-principal-bloco h2{
         font-size: 14px;
     }
@@ -98,6 +121,12 @@
     }
 }
 
+@media(max-width: 800px){
+    .faixa-horizontal-1{
+            height: 32em;
+    }
+}
+
 .faixa-horizontal-2{
     position: absolute;
     width: 100%;
@@ -111,7 +140,14 @@
 
 @media(orientation: portrait){
     .faixa-horizontal-2{
-        margin-top: 3em;
+        margin-top: 5.5em;
+        margin-bottom: 8em;
+    }
+}
+
+@media(max-width: 800px){
+    .faixa-horizontal-2{
+        margin-top: 5.5em;
         margin-bottom: 8em;
     }
 }
