@@ -131,7 +131,7 @@
     <div id="modal_container" class="modal_container">
         <div id="popup-aviso" class="popup-aviso">
             <div class="modal_aviso">
-                <div class="titulo-news"><h2>Inscreva seu email para receber conteúdos exclusivos</h2></div>
+                <div class="titulo-news"><h2>Preencha aqui para fazer seu quiz e receba as melhores dicas</h2></div>
                 <img src="img/newsletter_image.jpg" alt="Imagem ilustrativa de pessoa usando o celular">
                 <form id="form" method="POST" action="https://smtl.gama.academy/leads/3d935292-39f4-11ea-a319-e90cfbc180ef"> <!---->
                     <div class="conteudoPrincipal-formulario-input" >
@@ -155,7 +155,7 @@
                         required
                         />
                     </div>
-                     <input name="redirectTo" type="hidden" value="https://vctech.com.br/sucess.html"  />
+                    <input name="redirectTo" type="hidden" value="https://vctech.com.br/sucess.html"  />
                     <input name="debugMode" type="hidden" value="false" />
                     <button type="submit">Enviar</button>
                   </form>                       
@@ -171,9 +171,10 @@
             if(modal){
             modal.classList.add('mostrar');
             modal.addEventListener('click', (e) => {
-                if(e.target.id == modalID ){
+                if(e.target.tagName == 'BUTTON' ){
                     modal.classList.remove('mostrar');
                     localStorage.fechaModal = modalID;
+                    
                                 
                             }
                         });
