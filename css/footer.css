@@ -11,7 +11,7 @@
     height: 85px;
     left: 0px;
     bottom: 0px;
-    background: #3F82C4;
+    background: #24537F;
     z-index: 10;
 }
 
@@ -25,15 +25,15 @@
 }
 
 .facebook-icon img{
-    transform: translateY(2px) translateX(12px) scale(.7);
+    transform: translateY(2px) translateX(-8px) scale(.95);
 }
 
 .instagram-icon img{
-    transform: translateY(-2px) scale(.7);
+    transform: translateY(0px);
 }
 
 .twitter-icon img{
-    transform: translateX(-12px) scale(.7);
+    transform: translateY(2px) translateX(8px) scale(.95);
 }
 
 

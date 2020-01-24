@@ -1,7 +1,8 @@
 /* Menu */
 
 .logo-vc-tech{
-    margin-top: 20px;
+    margin-top: 15px;
+    width: 10em;
 }
 
 @media(orientation: landscape){
@@ -10,10 +11,17 @@
     }
 }
 
+@media(max-height: 501px){
+    .logo-vc-tech{
+        display: block;
+    }
+}
+
 .logo-vc-tech-2{
     position: absolute;
-    left: -480px;
-    top: 22px;
+    top: 12.5px;
+    right: 1em;
+    width: 13.2em;
 }
 
 .container-header{
@@ -28,7 +36,7 @@
     height: 81px;
     left: 0px;
     top: 0px;
-    background: #3F82C4;
+    background: #24537F;
     z-index: 15;
     box-shadow: 1px 0px 5px 1px black;
 }
@@ -48,6 +56,12 @@
     }
 }
 
+@media(max-height: 501px){
+    .menu-hamburguer{
+        display: block;
+    }
+}
+
 #check{
     display: none;
 }
@@ -62,7 +76,7 @@
 }
 
 .barra{
-    background: #3F82C4;
+    background: #24537F;
     height: 100vh;
     width: 50vw;
     transition: all .3s linear;
@@ -97,21 +111,8 @@
 
 /* Menu Desktop */
 
-.menu-desktop{
-    width: 100%;
-    position: relative;
-    text-align: center
-}
-
-@media (orientation:portrait){
-    .menu-desktop{
-        display: none;
-    }
-}
-
 .links-div-desk{
     position: absolute;
-    left: 62vw;
 }
 
 .menu-desktop a{
@@ -119,9 +120,9 @@
 }
 
 .desk-link{
-    width: 100px;
-    padding-top: 50px;
-    font-size: 12px;
+    width: 0px;
+    padding-top: 52px;
+    font-size: 13px;
     transition: all .3s linear;
     font-family: "Roboto";
     color: white;
@@ -136,32 +137,46 @@
 }
 
 .desk-link-1{
-    right: 270px;
-    z-index: 5;
-}
-
-.desk-link-2{
-    right: 195px;
-    z-index: 4;
+    right: 36px;
 }
 
 .desk-link-3{
-    right: 122px;
-    z-index: 3;
+    right: -15px;
 }
 
 .desk-link-4{
-    right: 65px;
-    z-index: 2;
+    right: -66px;
 }
 
 .desk-link-5{
-    right: 0px;
-    z-index: 1;
+    right: -110px;
 }
 
 .desk-link-img{
     position: absolute;
-    margin-top: 10px;
-    top: 0;
+    margin-top: 20px;
+    top: 2px;
+    left: 3.4em;
+    width: 2.2em
+}
+
+.desk-img-5{
+    left: 4.1em;
+}
+
+.menu-desktop{
+    display: flex;
+    justify-content: center;
+}
+
+@media (orientation:portrait){
+    .menu-desktop{
+        display: none;
+    }
+}
+
+@media(max-height: 501px){
+    .menu-desktop{
+        display: none;
+    }
 }
