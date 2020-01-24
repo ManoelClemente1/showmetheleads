@@ -98,10 +98,34 @@ section{
     width: 100%;
 }
 
+.imagem-conteudo-small{
+    text-align: center;
+    margin: auto;
+    width: 65%;
+    margin-top: 2em;
+    margin-bottom: 1.2em;
+}
+
+@media(max-width: 770px){
+    .imagem-conteudo-small{
+        width: 100%;
+    }
+}
+
+.imagem-conteudo-small img{
+    width: 100%;
+}
+
 figcaption{
     font-size: 9px;
     color: #797979;
     margin-top: 5em;
+}
+
+.imagem-conteudo-small figcaption{
+    font-size: 9px;
+    color: #797979;
+    margin-top: 1em;
 }
 
 section p, h4{
