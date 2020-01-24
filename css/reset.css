@@ -3,8 +3,9 @@
    License: none (public domain)
 */
 
-body{
-    overflow-x: hidden;
+
+.conteudo-principal-bloco{
+    min-height: 100vh;    
 }
 
 a:hover{
@@ -38,6 +39,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;

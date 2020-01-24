@@ -58,12 +58,14 @@
 
 .conteudo-principal-assuntos-link figcaption{
     font-size: 18px;
-    line-height: 20px;
+    line-height: 22px;
     text-align: center;
     font-weight: bold;
     max-width:  12em;
     color: #24537F;
-    margin-top: .5em;
+    margin: 1.5em;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 .conteudo-principal-div{
